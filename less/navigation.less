@@ -1,0 +1,104 @@
+// Navigation
+nav {
+    display: flex;
+    background-image: linear-gradient(#010413, rgba(255,0,0,0));
+    color: @nav-text;
+    text-decoration: none;
+    align-content: flex-end;
+    p {
+        .font();
+        font-size: 4rem;
+        font-weight: bold;
+        padding: 0px;
+        align-items: flex-end;
+    }
+
+    a {
+        .font();
+        display: flex;
+        align-content: baseline;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: @nav-text;
+    }
+
+    .a:hover {
+            color: white;
+        }
+
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        //.dash-border(2px; dashed; @navigation-border);
+        align-items: baseline;
+    }
+
+    .inner-container {
+        display: flex;
+        max-width: 800px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 20px auto;
+    }
+
+    .nav-section {
+        display: flex;
+        align-items: flex-end;
+
+        p {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .btn {
+            display: flex;
+            padding: 5px;
+            .signup-button(#D6980A; #031D4A; 5px; 20px);
+            .font();
+        }
+
+        .btn:hover {
+            background-color: #F6F7F8;
+            //color: #031D4A;
+        }
+        
+    }
+
+    .nav-section:last-child {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 0px 12px;
+
+        .line3:last-child{
+            display: none;
+        }
+
+        .a:hover {
+            color: white;
+        }
+    }
+
+    @media @tablet{
+        p {
+            font-size: 3.2rem;
+            font-weight: normal;
+            padding: 0px;
+        }
+        .inner-container {
+            width: 94%;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 3%;
+        }
+        .nav-section:last-child {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            //margin: 500px;
+        }
+    }
+}
