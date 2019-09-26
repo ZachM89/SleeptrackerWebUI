@@ -203,7 +203,7 @@ nav a {
   font-weight: bold;
   color: #D6980A;
 }
-nav .a:hover {
+nav a:hover {
   color: white;
 }
 nav .nav-container {
@@ -246,7 +246,7 @@ nav .nav-section:last-child {
   display: flex;
   width: 40%;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin: 0px 0px 12px;
 }
 nav .nav-section:last-child .line3:last-child {
