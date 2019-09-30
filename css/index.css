@@ -375,3 +375,11 @@ nav .nav-section:last-child .a:hover {
 .about-us {
   flex-direction: wrap;
 }
+.github-link {
+  text-decoration: none;
+  font-family: 'Maven Pro', sans-serif;
+  color: #D6980A;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
